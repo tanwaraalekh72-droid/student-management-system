@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h2>Student Management</h2>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#dashboard">Dashboard</a>
+            <a href="#students">Students</a>
+            <a href="#register">Register</a>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section class="hero" id="home">
+        <h1>Welcome to Student Management System</h1>
+        <p>Manage student information easily and efficiently.</p>
+        <a href="#register" class="btn">Add New Student</a>
+    </section>
+
+    <!-- Dashboard -->
+    <section class="dashboard" id="dashboard">
+        <h2>Dashboard Overview</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3 id="totalStudents">0</h3>
+                <p>Total Students</p>
+            </div>
+
+            <div class="card">
+                <h3>4</h3>
+                <p>Available Courses</p>
+            </div>
+
+            <div class="card">
+                <h3>30</h3>
+                <p>Total Teachers</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Details -->
+    <section class="students" id="students">
+        <h2>Student Details</h2>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search student by name..."
+        >
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Roll No.</th>
+                        <th>Name</th>
+                        <th>Course</th>
+                        <th>Email</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="studentTable">
+                    <!-- JavaScript adds students here -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section class="register" id="register">
+        <h2>Student Registration</h2>
+
+        <form id="studentForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter Student Name"
+                required
+            >
+
+            <input
+                type="number"
+                id="roll"
+                placeholder="Enter Roll Number"
+                required
+                min="1"
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter Email"
+                required
+            >
+
+            <select id="course" required>
+                <option value="">Select Course</option>
+                <option value="BCA">BCA</option>
+                <option value="B.Tech">B.Tech</option>
+                <option value="BBA">BBA</option>
+                <option value="MCA">MCA</option>
+            </select>
+
+            <button type="submit">Register Student</button>
+
+        </form>
+    </section>
+
+    <!-- About -->
+    <section class="about">
+        <h2>About Project</h2>
+        <p>
+            Student Management System is a web-based project
+            developed using HTML, CSS and JavaScript.
+            It helps users add, search, display and delete
+            student records easily.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Student Management System | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #172554;
+    color: white;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: #dbeafe;
+}
+
+.hero h1 {
+    color: #172554;
+    margin-bottom: 15px;
+    font-size: 32px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Sections */
+.dashboard, .students, .register, .about {
+    padding: 50px 8%;
+    text-align: center;
+}
+
+h2 {
+    color: #172554;
+    margin-bottom: 25px;
+}
+
+/* Dashboard Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    width: 220px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #ccc;
+}
+
+.card h3 {
+    color: #2563eb;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* Search */
+#searchInput {
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 20px;
+}
+
+/* Table */
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background: #172554;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #eaf1ff;
+}
+
+/* Registration */
+.register form {
+    max-width: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, select {
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button {
+    padding: 13px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover, .btn:hover {
+    background: #1e40af;
+}
+
+/* Delete Button */
+.delete-btn {
+    background: #dc2626;
+    padding: 8px 12px;
+}
+
+.delete-btn:hover {
+    background: #991b1b;
+}
+
+/* About */
+.about p {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+/* Footer */
+footer {
+    background: #172554;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 25px;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 12px;
+    }
+}
